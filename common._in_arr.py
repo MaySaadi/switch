@@ -88,7 +88,7 @@ def find_biggest(num1,num2,num3):
     else: 
         return num3
 
-print("The biggest number is:",find_biggest(7,2,3))
+print("The biggest number is:",find_biggest(5,5,7))
 
 #Median char
 def find_median_char_manual(string):
@@ -109,7 +109,7 @@ def find_median_char_manual(string):
 
 
 
-def highest_scoring_word(input_string):
+def get_highest_scoring_word(input_string):
     words = input_string.split()
     def word_score(word):
         return sum(ord(char) - ord('a') + 1 for char in word)
